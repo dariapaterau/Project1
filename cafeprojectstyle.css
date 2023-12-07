@@ -1,44 +1,161 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cafe Site</title>
+  <!-- Link Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Your custom CSS -->
+  <style>
+    /* Custom CSS for the cafe site */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f7f7f7;
+    }
 
-header {
-  background-color: #333;
-  color: white;
-  padding: 10px;
-}
+    /* Navbar styles */
+    .navbar {
+      background-color: #563d7c;
+      color: #fff;
+    }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-}
+    .navbar-brand {
+      font-size: 1.8em;
+    }
 
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
+    .navbar-nav .nav-link {
+      color: #fff;
+    }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
+    /* Hero section styles */
+    .hero-section {
+      background-image: url('path/to/your-image.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 100px 0;
+      text-align: center;
+    }
 
-main {
-  padding: 20px;
-}
+    .hero-section h1 {
+      font-size: 3.5em;
+      margin-bottom: 20px;
+    }
 
-section {
-  margin-bottom: 30px;
-}
+    .hero-section p {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+    }
 
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
+    /* Menu section styles */
+    .menu-section {
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .menu-item {
+      margin-bottom: 40px;
+    }
+
+    .menu-item img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #563d7c;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer p {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Cafe Name</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <h1>Welcome to Our Cafe</h1>
+      <p>Enjoy delicious food and beverages in a cozy atmosphere</p>
+      <a href="#menu" class="btn btn-primary btn-lg">View Menu</a>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu-section">
+    <div class="container">
+      <h2>Our Menu</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="menu-item">
+            <img src="path/to/menu-item-1.jpg" alt="Menu Item 1">
+            <h3>Menu Item 1</h3>
+            <p>Description of menu item 1</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="menu-item">
+            <img src="path/to/menu-item-2.jpg" alt="Menu Item 2">
+            <h3>Menu Item 2</h3>
+            <p>Description of menu item 2</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="menu-item">
+            <img src="path/to/menu-item-3.jpg" alt="Menu Item 3">
+            <h3>Menu Item 3</h3>
+            <p>Description of menu item 3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>For reservations or inquiries, please reach out to us:</p>
+      <p>Email: example@cafe.com</p>
+      <p>Phone: 123-456-7890</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Cafe Name. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS, jQuery, and Popper.js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
